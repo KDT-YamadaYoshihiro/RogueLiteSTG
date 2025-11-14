@@ -6,7 +6,10 @@ class App; // ‘O•ûéŒ¾
 class ScreenBase
 {
 public:
-    virtual ~ScreenBase() {}
+	virtual ~ScreenBase() = default;
+
+    virtual void OnEnter() {}         // ‰æ–Ê‚É“ü‚Á‚½‚Æ‚«
+    virtual void OnExit() {}          // ‰æ–Ê‚©‚ço‚é‚Æ‚«
 
     virtual void Initialize(App* app) = 0;
     virtual void Update() = 0;

@@ -1,5 +1,9 @@
 #pragma once
+#include <memory>
+#include <unordered_map>
+
 #include "ScreenBase.h"
+
 
 enum class ScreenType
 {
