@@ -132,10 +132,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Src\App\CApp.h" />
+    <ClInclude Include="Src\Screen\ScreenBase.h" />
+    <ClInclude Include="Src\Screen\ScreenInGame.h" />
+    <ClInclude Include="Src\Screen\ScreenManager.h" />
+    <ClInclude Include="Src\Screen\ScreenResult.h" />
+    <ClInclude Include="Src\Screen\ScreenTitle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\App\CApp.cpp" />
     <ClCompile Include="Src\App\Main.cpp" />
+    <ClCompile Include="Src\Screen\ScreenInGame.cpp" />
+    <ClCompile Include="Src\Screen\ScreenManager.cpp" />
+    <ClCompile Include="Src\Screen\ScreenResult.cpp" />
+    <ClCompile Include="Src\Screen\ScreenTitle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

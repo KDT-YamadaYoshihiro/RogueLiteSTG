@@ -46,7 +46,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
     HWND hWnd = CreateWindowEx(
         0,
         wc.lpszClassName,
-        L"DirectX12 2D Game",
+        L"RogueLiteSTG",
         WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, CW_USEDEFAULT,
         wr.right - wr.left,

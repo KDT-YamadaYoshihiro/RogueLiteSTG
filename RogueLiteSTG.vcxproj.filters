@@ -25,10 +25,31 @@
     <Filter Include="ソース ファイル\DirectX12">
       <UniqueIdentifier>{b394e570-934a-46b1-a8f9-4be16af2b75c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Screen">
+      <UniqueIdentifier>{f6da7e2d-96e6-493c-8065-46b50e6c0063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Screen">
+      <UniqueIdentifier>{83ddeb38-6864-4458-8a4a-e1d221d72e71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\App\CApp.h">
       <Filter>ヘッダー ファイル\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Screen\ScreenInGame.h">
+      <Filter>ヘッダー ファイル\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Screen\ScreenResult.h">
+      <Filter>ヘッダー ファイル\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Screen\ScreenBase.h">
+      <Filter>ヘッダー ファイル\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Screen\ScreenTitle.h">
+      <Filter>ヘッダー ファイル\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Screen\ScreenManager.h">
+      <Filter>ヘッダー ファイル\Screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +58,18 @@
     </ClCompile>
     <ClCompile Include="Src\App\Main.cpp">
       <Filter>ソース ファイル\App</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Screen\ScreenManager.cpp">
+      <Filter>ソース ファイル\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Screen\ScreenTitle.cpp">
+      <Filter>ソース ファイル\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Screen\ScreenInGame.cpp">
+      <Filter>ソース ファイル\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Screen\ScreenResult.cpp">
+      <Filter>ソース ファイル\Screen</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

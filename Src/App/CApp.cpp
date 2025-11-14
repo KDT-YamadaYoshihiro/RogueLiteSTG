@@ -11,6 +11,10 @@ bool App::Initialize(HWND hwnd, int width, int height)
     m_width = width;
     m_height = height;
 
+    m_screenManager = std::make_unique<ScreenManager>();
+    m_screenManager->ChangeScreen(ScreenType::TITLE, this);
+
+
     return InitDX12(hwnd);
 }
 
@@ -136,7 +140,7 @@ bool App::InitDX12(HWND hwnd)
 // --------------------------------------------------
 void App::Update()
 {
-    // ‚Ü‚¾‰½‚à‚È‚µ
+    m_screenManager->Update();
 }
 
 // --------------------------------------------------
@@ -186,6 +190,9 @@ void App::Render()
     m_commandList->Close();
     ID3D12CommandList* cmds[] = { m_commandList.Get() };
     m_commandQueue->ExecuteCommandLists(1, cmds);
+
+	// ‰æ–Ê•`‰æ
+    m_screenManager->Render();
 
     // -----------------------------
     // 6. Present

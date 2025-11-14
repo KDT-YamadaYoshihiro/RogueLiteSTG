@@ -3,10 +3,13 @@
 #include <wrl.h>
 #include <d3d12.h>
 #include <dxgi1_6.h>
+#include <memory>
+#include "../Screen/ScreenManager.h"
 
 class App
 {
 public:
+    ScreenManager* GetScreenManager() { return m_screenManager.get(); }
     bool Initialize(HWND hwnd, int width, int height);
     void Update();
     void Render();
@@ -15,6 +18,7 @@ public:
 private:
     bool InitDX12(HWND hwnd);
     void WaitForGPU();
+    std::unique_ptr<ScreenManager> m_screenManager;
 
 private:
     int m_width = 0;
