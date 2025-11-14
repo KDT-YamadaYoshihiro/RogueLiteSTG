@@ -13,5 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ヘッダー ファイル\App">
+      <UniqueIdentifier>{1f13325b-217d-402f-8695-4d43e55a4f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\App">
+      <UniqueIdentifier>{b4593ff9-bd1c-46b3-92ca-17d04274a9a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\DirectX12">
+      <UniqueIdentifier>{6e654f0f-aae3-402e-bde6-3a7b82839167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX12">
+      <UniqueIdentifier>{b394e570-934a-46b1-a8f9-4be16af2b75c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\App\CApp.h">
+      <Filter>ヘッダー ファイル\App</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\App\CApp.cpp">
+      <Filter>ソース ファイル\App</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\App\Main.cpp">
+      <Filter>ソース ファイル\App</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
