@@ -1,6 +1,6 @@
 #include "ScreenInGame.h"
 
-void ScreenInGame::Initialize(App* app)
+void ScreenInGame::Initialize()
 {
 }
 

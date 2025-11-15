@@ -3,9 +3,8 @@
 #include "ScreenManager.h"
 #include "../App/CApp.h"
 
-void ScreenTitle::Initialize(App* app)
+void ScreenTitle::Initialize()
 {
-    m_app = app;
 }
 
 void ScreenTitle::Update()
@@ -13,7 +12,7 @@ void ScreenTitle::Update()
     // Enterキーでゲーム開始
     if (GetAsyncKeyState(VK_RETURN) & 0x8000)
     {
-        m_app->GetScreenManager()->ChangeScreen(ScreenType::INGAME, m_app);
+		ScreenManager::GetInstance().ChangeScreen(ScreenType::INGAME);
     }
 }
 

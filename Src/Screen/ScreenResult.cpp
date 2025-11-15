@@ -1,6 +1,6 @@
 #include "ScreenResult.h"
 
-void ScreenResult::Initialize(App* app)
+void ScreenResult::Initialize()
 {
 }
 

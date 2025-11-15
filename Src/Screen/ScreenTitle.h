@@ -5,7 +5,7 @@
 class ScreenTitle : public ScreenBase
 {
 public:
-    void Initialize(App* app) override;
+    void Initialize() override;
     void Update() override;
     void Render() override;
     void Finalize() override;
